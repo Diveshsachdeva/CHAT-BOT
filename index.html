@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- upper blac  box coding  -->
+
+    <div class="upper-box">
+        <button class="btn1"> chat <i class="fa-sharp fa-solid fa-comments" id="message"></i> </button>
+        <button class="btn2"> Helpdesk <i class="fa-solid fa-magnifying-glass" id="Helpdesk"></i> </button>
+        <button class="bot-online">Bot Online </button>
+        <img src="images/su1tM-removebg-preview.png" alt="" class="img">
+    </div>
+
+    <!-- inside white box  conversation with bots coding   -->
+    <div class="inbox">
+        
+
+    </div>
+
+    <!-- hr line using here  -->
+    <hr class="hr">
+
+    <!-- inout type text -->
+    <div class="input"> <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}"
+            placeholder="Type your Question" /> </div>
+    <i class="fa-solid fa-paperclip" id="attach"></i>
+    <i class="fa-regular fa-face-smile" id="emoji"></i>
+    <button id="sendButton" class="sendButton" onclick="talk()">Send</button>
+    <p id="chatLog">Hi,
+
+        How can we help you today?</p>
+    </div>
+
+    <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
